@@ -2,7 +2,23 @@
 #### Video Demo:  https://youtu.be/6pWC3xlOnkY
 
 #### How to run
-```flask run```
+1. Create a virtual environment:
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+2. Install Python dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the Flask server:
+```bash
+python app.py
+```
+
+The API will be available at `http://127.0.0.1:5000/`
 
 #### Description:
 This is my final project for CS50x, and it is a sliding puzzle minigame with 3 difficulties: easy (3x3), medium (4x4), 
