@@ -1,5 +1,9 @@
 # SHIFTIFY
 #### Video Demo:  https://youtu.be/6pWC3xlOnkY
+
+#### How to run
+```flask run```
+
 #### Description:
 This is my final project for CS50x, and it is a sliding puzzle minigame with 3 difficulties: easy (3x3), medium (4x4), 
 hard (5x5). In case you are unfamiliar with sliding puzzle, it basically starts as a shuffled numbered tiles that you will
