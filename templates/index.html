@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block main %}
+    <i class="fa fa-th" style="font-size: 10rem;"></i>
+    <h1 class="dark-purple-txt">Shiftify</h1>
+    <div>
+        <form action="/reshuffle" method="post">
+            <button name="mode" value="easy" class="btn btn-lg btn-success w-75">Easy Mode</button>
+        </form>
+
+        <form action="/reshuffle" method="post">
+            <button name="mode" value="normal" class="btn btn-lg btn-warning text-light w-75">Normal Mode</button>
+        </form>
+
+        <form action="/reshuffle" method="post">
+            <button name="mode" value="hard" class="btn btn-lg btn-danger w-75">Hard Mode</button>
+        </form>
+
+    </div>
+{% endblock %}

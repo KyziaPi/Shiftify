@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Instructions
+{% endblock %}
+
+{% block main %}
+
+<div class="rounded-top-5 p-5 mb-4 mx-4">
+<h2 class="text-light">Hi, We Are Shiftify!</h2>
+    <p class="text-light">Shiftify is a python sliding puzzle game created by Gueco, Yerika Elaine S., Aquino, Katrine Ingrid O., and Villanueva, Anne Beatriz M.. We are 2nd year college student from
+    Angeles University Foundation under the College of Computer Studies. It was developed as her final requirement for CS50x, showcasing her
+    skills and understanding about python, javascript, and HTML.</p>
+</div>
+
+<div class="rounded-bottom-5 p-5 mx-4">
+<h2>How to Play?</h2>
+    <p>1. Chose a Mode: Select from the three difficulty levels:
+        <span class="text-success">Easy (3x3)</span>
+        <span class="text-white">Normal (4x4)</span>
+        <span class="text-danger">Hard (5x5) </span>
+    </p>
+    <p>2. Goal: Arrange the tiles in a numerical order by sliding them into the empty space.</p>
+    <p>3. Move Tiles: Click on the tiles to move it to the empty space.</p>
+    <p>4. Win: Solve the puzzle by arranging the tiles correctly.</p>
+    <h4>TOP THE LEADERBOARD: <strong>Only top 10 will be shown!</strong>
+        There are two types of leaderboards per difficulty, one for
+        least number of tiles moved and another for least amount of time!</h4>
+</div>
+
+{% endblock %}

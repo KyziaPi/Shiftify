@@ -1,0 +1,168 @@
+:root {
+    --main: #9B4DCC;
+    --dark_main: #4B0082;
+    --bg: #FCFCED;
+    --text: #333333;
+    --teal: #1ABC9C;
+    --gold: #F39C12;
+}
+
+body {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+    background-color: var(--bg);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+* {
+    font-family: "Copperplate", fantasy;
+    color: var(--text);
+}
+
+nav {
+    background-color: var(--main);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.dark-purple-txt {
+    color: var(--dark_main);
+}
+
+i {
+    color: var(--gold);
+}
+
+.btn-lg {
+    background-color: var(--teal);
+    border-color: var(--teal);
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.game-btn {
+    background-color: var(--teal);
+    border-color: var(--teal);
+    font-size: 1.3rem;
+}
+
+.grid-container-3x3 {
+   display: grid;
+   grid-template-columns: repeat(3, 70px);
+   grid-template-rows: repeat(3, 70px);
+   gap: 20px;
+   justify-content: center;
+   margin: 20px 0;
+}
+
+.grid-container-3x3 .grid-item {
+    width: 80px; /* Size specific for 3x3 */
+    height: 80px;
+    font-size: 2rem; /* Larger font for bigger tiles */
+    background-color: var(--gold);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.grid-container-4x4 {
+    display: grid;
+    grid-template-columns: repeat(4, 70px); /* Adjust size for 4x4 */
+    grid-template-rows: repeat(4, 70px);
+    gap: 10px; /* Smaller gap for tighter layout */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.grid-container-4x4 .grid-item {
+    width: 70px; /* Size specific for 4x4 */
+    height: 70px;
+    font-size: 1.5rem; /* Adjusted font for medium tiles */
+    background-color: var(--gold);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.grid-container-5x5 {
+    display: grid;
+    grid-template-columns: repeat(5, 60px); /* Adjust size for more tiles */
+    grid-template-rows: repeat(5, 60px);
+    gap: 8px; /* Smaller gap for more compact grid */
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.grid-container-5x5 .grid-item {
+    width: 60px; /* Size specific for 5x5 */
+    height: 60px;
+    font-size: 1.2rem; /* Smaller font for smaller tiles */
+    background-color: var(--gold);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border: none;
+}
+
+.grid-item.empty {
+        background-color: transparent;
+        cursor: default;
+}
+
+.info {
+    background-color: var(--dark_main);
+    cursor: default;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.info.contrast {
+    background-color: var(--gold);
+}
+
+.rounded-top-5 {
+    background-color: var(--teal);
+    text-align: justify;
+}
+
+.rounded-bottom-5 {
+    background-color: var(--gold);
+    text-align: justify;
+}
+
+.form-control {
+    margin: 2rem 0;
+}
+
+.alert {
+    background-color: var(--gold);
+    border-color: #6e4709;
+    color: #6e4709;
+    font-size: 1.5rem;
+}
+

@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Hard Mode - 5x5 Puzzle
+{% endblock %}
+
+{% block main %}
+    <h2>Hard Mode</h2>
+<div class="d-flex justify-content-center">
+        <div class="info rounded-pill py-2 px-4 m-3">Timer:
+            <span id="timer" class="text-light">0.0</span>s
+        </div>
+        <div class="info rounded-pill p-2 px-4 m-3">Tiles Moved:
+            <span id="tiles-moved" class="text-light">0</span></div>
+    </div>
+
+    <form id="game-form" action="/play/hard" method="post">
+        <div id="board" class="grid-container-5x5">
+            {% for tile in board %}
+                {% if tile != 0 %}
+                    <button type="button" class="grid-item tile-btn" data-tile="{{ tile }}">{{ tile }}</button>
+                {% else %}
+                    <div class="grid-item empty"></div> <!-- Empty space where the tile can move -->
+                {% endif %}
+            {% endfor %}
+        </div>
+    </form>
+
+    <br>
+
+    <div class="d-flex justify-content-center">
+        <form action="/reshuffle" method="post">
+            <input type="hidden" name="mode" value="hard">
+            <button type="submit" class="game-btn btn btn-info text-light rounded p-3 mx-3">
+                Re-shuffle Puzzle
+            </button>
+        </form>
+
+        <a href="/"><button class="game-btn btn btn-danger text-light rounded p-3 mx-3">Back to Menu</button></a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% endblock %}

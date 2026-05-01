@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Leaderboard
+{% endblock %}
+
+{% block main %}
+<h2>Leaderboard</h2>
+<div class="btn-group w-100 mb-0" role="group">
+    <input type="radio" class="btn-check" name="difficulty" id="easy" value="easy" autocomplete="off" checked>
+    <label class="btn btn-outline-success rounded-bottom-0" for="easy">Easy</label>
+
+    <input type="radio" class="btn-check" name="difficulty" id="normal" value="normal" autocomplete="off">
+    <label class="btn btn-outline-warning rounded-bottom-0" for="normal">Normal</label>
+
+    <input type="radio" class="btn-check" name="difficulty" id="hard" value="hard" autocomplete="off">
+    <label class="btn btn-outline-danger rounded-bottom-0" for="hard">Hard</label>
+</div>
+<div class="container bg-success" id="leaderboard-bg">
+    <div class="row py-2">
+        <div class="col border-end" id="time-leaderboard">
+
+        </div>
+        <div class="col border-start" id="tile-leaderboard">
+
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/leaderboard.js') }}"></script>
+{% endblock %}

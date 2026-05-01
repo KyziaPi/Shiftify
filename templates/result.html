@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Result
+{% endblock %}
+
+{% block main %}
+    <h2><i class="fa fa-trophy"></i> Congratulations! You cleared <span class="{{ text_color }}">{{ mode }} mode</span>! <i class="fa fa-trophy"></i></h2>
+
+    <div class="d-flex justify-content-center">
+        <div class="info rounded-top-4 py-2 px-4 mt-3 w-25">Time: {{ final_time  }}s</div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <div class="info contrast rounded-bottom-4 py-2 px-4 w-25">Move Count: {{ tiles_moved }}</div>
+    </div>
+
+    <form action="/leaderboard" method="post">
+        <div class="d-flex justify-content-center">
+            <div class="input-group input-group-lg w-50">
+                <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Type Your Name" type="text">
+            </div>
+        </div>
+        <button type="submit" class="game-btn btn btn-info text-light p-3">Submit Score to the Leaderboard</button>
+    </form>
+{% endblock %}
