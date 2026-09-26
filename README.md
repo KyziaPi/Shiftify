@@ -205,12 +205,3 @@ Contains the AJAX for the leaderboard details. Leaderboard's difficulty mode tha
 that is currently "checked" or active. "/fetch_score" was utilized from frontend to connect to UI. "/fetch_score" returns
 two arrays, all the rows for the selected difficulty in ascending order of time and in ascending order of tiles moved. 
 Within those array of rows are another array containing the id, username, time, and tiles_moved.
-
-## Parting Words
-I am truly thankful for this course. Thanks to CS50x, I have grown to like the feeling of my brain just hurting so much
-from trying to figure out the bug within my code. That's where you truly learn, because a problem that takes you hours or
-even days to find a solution to will make you really remember that dumb mistake that you did, therefore remembering it 
-better for the next time you encounter it. I've been very lazy to self-study and code on my own free time, but this course 
-has made me appreciate just how much progress you can gain from self-studying. I am interested in data science, so after
-this I will learn STAT110x and then Introduction to Data Science with Python. Thank you Dr. Malan for inspiring me to be
-the best version of myself!
